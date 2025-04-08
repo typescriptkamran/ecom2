@@ -115,15 +115,13 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <I18nContext.Provider
-      value={{ 
-        language, 
-        setLanguage, 
-        t, 
-        translations,
-        availableLanguages: LANGUAGES,
-      }}
-    >
+    <I18nContext.Provider value={{
+      language,
+      setLanguage,
+      t,
+      translations,
+      availableLanguages: LANGUAGES
+    }}>
       {children}
     </I18nContext.Provider>
   );
