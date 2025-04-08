@@ -17,7 +17,7 @@ export default function Footer() {
         {/* Payment and Shipping Info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 pb-12 border-b border-gray-200">
           <div className="flex items-center justify-center md:justify-start gap-4">
-            <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+            <div className="p-3 bg-orange-100 rounded-full text-orange-600">
               <Truck className="h-6 w-6" />
             </div>
             <div>
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center justify-center md:justify-start gap-4">
-            <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+            <div className="p-3 bg-orange-100 rounded-full text-orange-600">
               <CreditCard className="h-6 w-6" />
             </div>
             <div>
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center justify-center md:justify-start gap-4">
-            <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+            <div className="p-3 bg-orange-100 rounded-full text-orange-600">
               <ShieldCheck className="h-6 w-6" />
             </div>
             <div>
@@ -57,7 +57,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#featured"
-                  className="text-gray-600 hover:text-blue-600"
+                  className="text-gray-600 hover:text-orange-600"
                 >
                   Featured Products
                 </Link>
@@ -65,7 +65,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/dashboard"
-                  className="text-gray-600 hover:text-blue-600"
+                  className="text-gray-600 hover:text-orange-600"
                 >
                   New Arrivals
                 </Link>
@@ -73,7 +73,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/dashboard"
-                  className="text-gray-600 hover:text-blue-600"
+                  className="text-gray-600 hover:text-orange-600"
                 >
                   Best Sellers
                 </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/dashboard"
-                  className="text-gray-600 hover:text-blue-600"
+                  className="text-gray-600 hover:text-orange-600"
                 >
                   Special Offers
                 </Link>
@@ -96,22 +96,25 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-600 hover:text-blue-600">
+                <Link
+                  href="/contact-us"
+                  className="text-gray-600 hover:text-orange-600"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-blue-600">
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
                   FAQs
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-blue-600">
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
                   Shipping Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-blue-600">
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
                   Returns & Exchanges
                 </Link>
               </li>
@@ -125,7 +128,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/sign-in"
-                  className="text-gray-600 hover:text-blue-600"
+                  className="text-gray-600 hover:text-orange-600"
                 >
                   Sign In
                 </Link>
@@ -133,7 +136,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/sign-up"
-                  className="text-gray-600 hover:text-blue-600"
+                  className="text-gray-600 hover:text-orange-600"
                 >
                   Register
                 </Link>
@@ -141,7 +144,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/dashboard"
-                  className="text-gray-600 hover:text-blue-600"
+                  className="text-gray-600 hover:text-orange-600"
                 >
                   Order History
                 </Link>
@@ -149,7 +152,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/dashboard"
-                  className="text-gray-600 hover:text-blue-600"
+                  className="text-gray-600 hover:text-orange-600"
                 >
                   Track Orders
                 </Link>
@@ -162,22 +165,28 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-900 mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-600 hover:text-blue-600">
+                <Link
+                  href="/privacy-policy"
+                  className="text-gray-600 hover:text-orange-600"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-blue-600">
+                <Link
+                  href="/terms-of-service"
+                  className="text-gray-600 hover:text-orange-600"
+                >
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-blue-600">
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
                   Refund Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-blue-600">
+                <Link href="#" className="text-gray-600 hover:text-orange-600">
                   Cookie Policy
                 </Link>
               </li>
@@ -187,7 +196,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
           <div className="text-gray-600 mb-4 md:mb-0">
-            © {currentYear} ShopSmart E-commerce. All rights reserved.
+            © {currentYear} Bloom & Basket Flower Shop. All rights reserved.
           </div>
 
           <div className="flex space-x-6">

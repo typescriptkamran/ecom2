@@ -1,66 +1,82 @@
 import Link from "next/link";
-import {
-  ArrowUpRight,
-  Check,
-  ShoppingBag,
-  Truck,
-  CreditCard,
-  Clock,
-} from "lucide-react";
+import { ArrowRight, ShoppingBag } from "lucide-react";
 
 export default function Hero() {
   return (
     <div className="relative overflow-hidden bg-white">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 opacity-70" />
+      {/* Background image */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-white to-white/80" />
 
-      <div className="relative pt-24 pb-32 sm:pt-32 sm:pb-40">
+      <div className="relative py-12 md:py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
-              Shop{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                Smarter
-              </span>{" "}
-              with Our Modern E-commerce Platform
-            </h1>
+          <div className="flex flex-col md:flex-row items-center">
+            {/* Text content */}
+            <div className="md:w-1/2 md:pr-12 text-left mb-8 md:mb-0">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                Spring Joy & Birthdays
+                <br />
+                <span>We Make People Smile</span>
+              </h1>
 
-            <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Discover a seamless shopping experience with our responsive
-              product catalog, intuitive cart management, and streamlined
-              checkout process.
-            </p>
+              <p className="text-lg text-gray-600 mb-8 max-w-lg">
+                Beautiful flowers for every occasion, delivered fresh to your
+                doorstep.
+              </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
-                href="/dashboard"
-                className="inline-flex items-center px-8 py-4 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium"
-              >
-                Shop Now
-                <ShoppingBag className="ml-2 w-5 h-5" />
-              </Link>
-
-              <Link
-                href="#featured"
-                className="inline-flex items-center px-8 py-4 text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors text-lg font-medium"
-              >
-                Featured Products
-              </Link>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/dashboard"
+                  className="inline-flex items-center px-6 py-3 text-white bg-orange-600 rounded hover:bg-orange-700 transition-colors text-base font-medium"
+                >
+                  Shop Now
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </div>
             </div>
 
-            <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-gray-600">
-              <div className="flex items-center gap-2">
-                <Truck className="w-5 h-5 text-green-500" />
-                <span>Free shipping on orders over $50</span>
+            {/* Hero image */}
+            <div className="md:w-1/2">
+              <div className="relative rounded-lg overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1596438459194-f275f413d6ff?w=800&q=80"
+                  alt="Premium spring flower arrangement with seasonal blooms in vibrant colors"
+                  className="w-full h-auto object-cover rounded-lg"
+                  loading="eager"
+                  width={800}
+                  height={600}
+                />
               </div>
-              <div className="flex items-center gap-2">
-                <CreditCard className="w-5 h-5 text-green-500" />
-                <span>Cash on Delivery available</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5 text-green-500" />
-                <span>Easy 30-day returns</span>
-              </div>
+            </div>
+          </div>
+
+          {/* Categories section */}
+          <div className="mt-16 grid grid-cols-3 gap-4 text-center">
+            <div className="bg-orange-100/50 rounded-lg p-4">
+              <h3 className="font-medium text-lg mb-2">Our Favorites</h3>
+              <Link
+                href="/dashboard"
+                className="text-orange-600 hover:underline inline-flex items-center"
+              >
+                Shop Now <ArrowRight className="ml-1 w-3 h-3" />
+              </Link>
+            </div>
+            <div className="bg-orange-100/50 rounded-lg p-4">
+              <h3 className="font-medium text-lg mb-2">Gift Baskets</h3>
+              <Link
+                href="/dashboard"
+                className="text-orange-600 hover:underline inline-flex items-center"
+              >
+                Shop Now <ArrowRight className="ml-1 w-3 h-3" />
+              </Link>
+            </div>
+            <div className="bg-orange-100/50 rounded-lg p-4">
+              <h3 className="font-medium text-lg mb-2">Personalized Gifts</h3>
+              <Link
+                href="/dashboard"
+                className="text-orange-600 hover:underline inline-flex items-center"
+              >
+                Shop Now <ArrowRight className="ml-1 w-3 h-3" />
+              </Link>
             </div>
           </div>
         </div>
